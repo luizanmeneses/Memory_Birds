@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(79, 153, 182);
+}
+h1{
+  color: beige;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.carta{/*Pra que todas as imgs tenham o mesmo tam*/
+    width: 150px;
+    height: 120px;
+  }
+
+#table{
+  margin-top: 0px;
+}
+#audio{
+  margin-top: 0px;
+}

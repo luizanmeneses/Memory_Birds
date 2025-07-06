@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---Memory Birds---</title>
+    <link rel="stylesheet" href="memoryBirds.css">
+</head>
+<!--Ao carregar a pág a função é acionada, esta foi montada lá no JS-->
+<body onload="novoJogo()">
+<h1>Jogo de Memória</h1>
+
+<!--Criar estrutura de tabela onde aparecerão as cartas-->
+<table align="center" id="table">
+    <tr><!--tr é Linha e dentro dela temos as td que são células, onde fica o conteudo-->
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(0);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(1);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(2);"/></td>
+    </tr>
+    <tr>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(3);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(4);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(5);"/></td>
+    </tr>
+    <tr>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(6);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(7);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(8);"/></td>
+    </tr>
+    <tr>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(9);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(10);"/></td>
+        <td><img src="imgs memorybirds/costas.jpg" name="campo" class="carta" onclick="verificaJogada(11);"/></td>
+    </tr>
+<!--o name permite acessar a img lá do JS, o class, permite acessar do CSS, 
+onclick: quando a img é clicada, chama a funcao verificaJogada e o 0 é passado como parametro para ela,
+esse num de param provavelmente representa o índice da carta clicada-->
+</table>
+
+<center>
+    <input type="text" id="msg" size="45"/>
+
+    <input type="button" value="Novo Jogo" onclick="novoJogo();"/>
+</center>
+<!--Música:-->
+<audio id="audio" controls>
+    <source src="Birdseye Blues - Chris Haugen.mp3" type="audio/mp3">
+</audio>
+<script src="memoryBirds.js"></script>  
+</body>
+</html>
